@@ -374,7 +374,11 @@ footer{
 }
 /* responsive design */
 /* mobile devices */
-@media screen and (max-width:576px){
+@media screen and (max-width:425px){
+    body{
+        padding: 0;
+        margin: 0;
+    }
     header{
         flex-direction: column;
         align-items: center;
@@ -408,7 +412,7 @@ footer{
     }
 
     .banner-images img{
-        transform: translate(0px, -390px);
+        transform: translate(0px, -370px);
         width: 400px;
         margin-top: 0;
     }
