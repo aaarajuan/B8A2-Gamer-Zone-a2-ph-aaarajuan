@@ -20,10 +20,8 @@
 }
 
 .title {
-    display: flex;
-    flex-direction: column;
     padding-bottom: 20px;
-    text-align: right;
+    text-align: center;
     font-size: 3rem;
     font-weight: 700;
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
@@ -220,6 +218,7 @@ nav ul > li a {
 
 /* online games funny videos section styles start here */
 .online-games-funny-videos-container {
+
     margin-top: 50px;
 }
 
@@ -350,7 +349,7 @@ footer{
 }
 
 .footer-links ul li, .social-links ul li, .website-links ul li {
-    display: inline;
+    display: flex;
     padding-right: 30px;
     list-style: none;
 }
@@ -431,6 +430,68 @@ footer{
     .title{
         align-items: center;
         text-align: center;
+        width: 400px;
+    }
+    .online-games-funny-videos-container{
+        flex-direction: column;
+    }
+    .ogfv-content{
+        align-items: center;
+        text-align: center;
+    }
+    .video-cards{
+        flex-direction: column;
+    }
+    .videos{
+        padding-bottom: 30px;
+    }
+    .play-instantly-container, .play-instantly-container2{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .play-instantly-content {
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        width: 400px;
+    }
+    .pimg, .pimg2{
+        width: 400px;
+    }
+    .sub-img, .sub-img2{
+        transform: translate(-160px, -160px);
+    }
+    .play-instantly-content2{
+        transform: translate(0px, -900px);
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        width: 400px;
+    }
+    .pimg2{
+        transform: translate(0px, 300px);
+    }
+    .sub-img2{
+        transform: translate(-160px, 160px);
+    }
+    .users{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-links ul, .social-links ul, .website-links ul {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 400px;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+    .footer-links ul li, .social-links ul li, .website-links ul li{
+        padding: 10px;
+    }
+    .copyright{
         width: 400px;
     }
 }
