@@ -1,7 +1,7 @@
 # B8A2-Gamer-Zone-a2-ph-aaarajuan
 live  website link: https://aaarajuan.github.io/B8A2-Gamer-Zone-a2-ph-aaarajuan/
 
-Mobile Device Size: max-width:576px
+```Mobile Device Size: max-width:576px```
 
 #Video Preview
 
