@@ -1,32 +1,117 @@
 /* shared styles */
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Work Sans', sans-serif;
 }
 
-:root{
+:root {
     --pink: #ff42a5;
+    --light-grey: #cecbd4;
+    --light-dark-grey: #3C354F;
+    --black: #0B0223;
+    --white: #FFF;
 }
 
-.primary-color{
+.primary-color {
     color: var(--pink);
 }
 
 /* header styles start here */
-header{
-    padding: 20px 04px 20px 120px;
-    background: #FFF;
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 120px 20px 120px;
+    background: var(--white);
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
 }
-.logo h2{
+
+.logo h1 {
     font-size: 45px;
     font-weight: 700;
 }
-.header-logo img{
+
+.header-logo img {
     display: flex;
     gap: 20px;
 }
 
+nav ul {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: var(--light-dark-grey);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+}
 
+nav ul li {
+    display: inline;
+    padding-right: 30px;
+    list-style: none;
+}
 
+nav ul>li a {
+    text-decoration: none;
+}
+
+.header-social-links {
+    border: 0px;
+    border-radius: 8px;
+    background-color: var(--light-grey);
+    padding: 10px;
+}
+
+/* header styles end here */
+
+/* banner styles start here */
+.banner-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner-title{
+    color: var(--black);
+    text-align: center;
+    font-size: 48px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.banner-title .goat-text{
+    text-align: center;
+    font-size: 95px;
+    font-weight: 800;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    /* copied style from figma */
+}
+
+.banner-description{
+    color: var(--light-dark-grey);
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-transform: lowercase;
+}
+
+.btn-pink{
+    border: 0px;
+    border-radius: 48px;
+    background: var(--pink);
+    padding: 10px;
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
