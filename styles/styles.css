@@ -1,0 +1,32 @@
+/* shared styles */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+:root{
+    --pink: #ff42a5;
+}
+
+.primary-color{
+    color: var(--pink);
+}
+
+/* header styles start here */
+header{
+    padding: 20px 04px 20px 120px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
+.logo h2{
+    font-size: 45px;
+    font-weight: 700;
+}
+.header-logo img{
+    display: flex;
+    gap: 20px;
+}
+
+
+
