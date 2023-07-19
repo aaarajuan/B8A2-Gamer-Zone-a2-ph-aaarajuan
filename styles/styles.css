@@ -9,6 +9,7 @@
     --pink: #ff42a5;
     --light-grey: #cecbd4;
     --light-dark-grey: #3C354F;
+    --light-grey2: #534C64;
     --black: #0B0223;
     --white: #FFF;
     --sky-blue: #4EC5F7;
@@ -70,7 +71,7 @@ nav ul>li a {
 .banner-container{
     display: flex;
     justify-content: space-between;
-    padding: 20px 220px 20px 220px;
+    padding: 20px 220px 0px 220px;
     align-items: center;
 }
 
@@ -146,3 +147,51 @@ nav ul>li a {
 }
 
 /* banner section styles end here */
+
+/* we are gamer section styles start here */
+
+.we-are-gamer-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 220px 20px 220px;
+    margin-top: 0;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+    /* copied style from figma */
+}
+
+.wag-content{
+    
+    text-align: right;
+}
+
+.title{
+    padding-bottom: 20px;
+    text-align: right;
+    font-size: 48px;
+    font-weight: 700;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.description{
+    padding-bottom: 20px;
+    color: var(--light-grey2);
+    font-size: 1.01rem;
+    font-weight: 400;
+}
+
+.our-purpose{
+    padding-top: 20px;
+    color: var(--light-grey2);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.quote{
+    color: var(--light-grey2);
+    font-size: 32px;
+    font-weight: 700;
+}
