@@ -19,6 +19,25 @@
     color: var(--pink);
 }
 
+.title{
+    padding-bottom: 20px;
+    text-align: right;
+    font-size: 48px;
+    font-weight: 700;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* copied style from figma */
+}
+
+.description{
+    padding-bottom: 20px;
+    color: var(--light-grey2);
+    font-size: 1.01rem;
+    font-weight: 400;
+}
+
 /* header styles start here */
 header {
     display: flex;
@@ -73,13 +92,17 @@ nav ul>li a {
     justify-content: space-between;
     padding: 20px 220px 0px 220px;
     align-items: center;
+    background-image: url("../images/Group\ 14.png");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: left;
 }
 
 .banner-content{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 1rem;  
 }
 
 .banner-title{
@@ -165,24 +188,6 @@ nav ul>li a {
     text-align: right;
 }
 
-.title{
-    padding-bottom: 20px;
-    text-align: right;
-    font-size: 48px;
-    font-weight: 700;
-    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.description{
-    padding-bottom: 20px;
-    color: var(--light-grey2);
-    font-size: 1.01rem;
-    font-weight: 400;
-}
-
 .our-purpose{
     padding-top: 20px;
     color: var(--light-grey2);
@@ -192,6 +197,103 @@ nav ul>li a {
 
 .quote{
     color: var(--light-grey2);
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 700;
+}
+
+/* we are gamers section styles end here */
+
+/* online games funny videos section styles start here */
+.online-games-funny-videos-container{
+    margin-top: 50px;
+}
+.ogfv-content{
+    text-align: center;
+    padding-bottom: 10px;
+}
+.dark-title{
+    color: var(--black);
+    font-size: 3rem;
+    font-weight: 700;
+}
+.video-cards{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px 220px 20px 220px;
+}
+
+figcaption{
+    color: var(--light-grey2);
+    font-size: 1.1rem;
+    font-weight: 500;
+    width: 355px;
+}
+/* online games funny videos section styles end here */
+
+/* play instantly styles start here */
+.play-instantly-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 250px;
+    padding: 20px 220px 20px 220px;
+    margin-top: 50px;
+    align-content: center;
+}
+
+.play-instantly-content{
+    text-align: right;
+    transform: translate(0px, 200px)
+}  
+
+.pimg{
+    width: 100%;
+}
+
+.sub-img{
+    width: 50%;
+    transform: translate(-90px, -280px);
+}
+
+.play-instantly-container2{
+    display: flex;
+    justify-content: space-between;
+    gap: 250px;
+    padding: 20px 220px 20px 220px;
+    align-content: center;
+}
+.play-instantly-content2{
+    text-align: left;
+    transform: translate(0px, 250px)
+}  
+
+.pimg2{
+    width: 100%;
+}
+
+.sub-img2{
+    width: 50%;
+    transform: translate(450px, -290px);
+}
+
+/* play instantly styles end here */
+
+.users-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px 220px 20px 220px;
+}
+.users{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 10px;
+}
+.users:hover{
+    border: 2px solid var(--pink);
+    border-radius: 50px;
+    color: var(--pink);
 }
