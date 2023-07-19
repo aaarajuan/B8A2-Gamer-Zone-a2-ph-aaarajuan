@@ -19,7 +19,7 @@
     color: var(--pink);
 }
 
-.title{
+.title {
     padding-bottom: 20px;
     text-align: right;
     font-size: 48px;
@@ -31,7 +31,7 @@
     /* copied style from figma */
 }
 
-.description{
+.description {
     padding-bottom: 20px;
     color: var(--light-grey2);
     font-size: 1.01rem;
@@ -48,6 +48,7 @@ header {
 }
 
 .logo h1 {
+    display: flex;
     font-size: 2.8rem;
     font-weight: 700;
 }
@@ -87,7 +88,7 @@ nav ul>li a {
 /* header styles end here */
 
 /* banner styles start here */
-.banner-container{
+.banner-container {
     display: flex;
     justify-content: space-between;
     padding: 20px 220px 0px 220px;
@@ -98,14 +99,14 @@ nav ul>li a {
     background-position: left;
 }
 
-.banner-content{
+.banner-content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;  
+    gap: 1rem;
 }
 
-.banner-title{
+.banner-title {
     color: var(--black);
     text-align: center;
     font-size: 3rem;
@@ -113,7 +114,7 @@ nav ul>li a {
     text-transform: uppercase;
 }
 
-.banner-title .goat-text{
+.banner-title .goat-text {
     text-align: center;
     font-size: 5.9rem;
     font-weight: 800;
@@ -121,11 +122,11 @@ nav ul>li a {
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
+    -webkit-text-fill-color: transparent;
     /* copied style from figma */
 }
 
-.banner-description{
+.banner-description {
     color: var(--light-dark-grey);
     list-style: none;
     font-size: 1.1rem;
@@ -133,21 +134,21 @@ nav ul>li a {
     text-transform: lowercase;
 }
 
-.banner-description li{
+.banner-description li {
     padding-bottom: 10px;
 }
 
-.banner-description li > i{
+.banner-description li>i {
     padding-right: 10px;
 }
 
-.banner-btn{
+.banner-btn {
     display: flex;
     gap: 1.4rem;
     margin-top: 20px;
 }
 
-.btn-pink{
+.btn-pink {
     border: 0px;
     border-radius: 40px;
     background: var(--pink);
@@ -158,7 +159,7 @@ nav ul>li a {
     text-transform: uppercase;
 }
 
-.btn-blue{
+.btn-blue {
     border: 0px;
     border-radius: 40px;
     background: var(--sky-blue);
@@ -173,7 +174,7 @@ nav ul>li a {
 
 /* we are gamer section styles start here */
 
-.we-are-gamer-container{
+.we-are-gamer-container {
     display: flex;
     justify-content: space-between;
     padding: 20px 220px 20px 220px;
@@ -183,19 +184,19 @@ nav ul>li a {
     /* copied style from figma */
 }
 
-.wag-content{
-    
+.wag-content {
+
     text-align: right;
 }
 
-.our-purpose{
+.our-purpose {
     padding-top: 20px;
     color: var(--light-grey2);
     font-size: 1.2rem;
     font-weight: 500;
 }
 
-.quote{
+.quote {
     color: var(--light-grey2);
     font-size: 2rem;
     font-weight: 700;
@@ -204,35 +205,39 @@ nav ul>li a {
 /* we are gamers section styles end here */
 
 /* online games funny videos section styles start here */
-.online-games-funny-videos-container{
+.online-games-funny-videos-container {
     margin-top: 50px;
 }
-.ogfv-content{
+
+.ogfv-content {
     text-align: center;
     padding-bottom: 10px;
 }
-.dark-title{
+
+.dark-title {
     color: var(--black);
     font-size: 3rem;
     font-weight: 700;
 }
-.video-cards{
+
+.video-cards {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding: 20px 220px 20px 220px;
 }
 
-figcaption{
+figcaption {
     color: var(--light-grey2);
     font-size: 1.1rem;
     font-weight: 500;
     width: 355px;
 }
+
 /* online games funny videos section styles end here */
 
 /* play instantly styles start here */
-.play-instantly-container{
+.play-instantly-container {
     display: flex;
     justify-content: space-between;
     gap: 250px;
@@ -241,59 +246,143 @@ figcaption{
     align-content: center;
 }
 
-.play-instantly-content{
+.play-instantly-content {
     text-align: right;
     transform: translate(0px, 200px)
-}  
+}
 
-.pimg{
+.pimg {
     width: 100%;
 }
 
-.sub-img{
+.sub-img {
     width: 50%;
     transform: translate(-90px, -280px);
 }
 
-.play-instantly-container2{
+.play-instantly-container2 {
     display: flex;
     justify-content: space-between;
     gap: 250px;
-    padding: 20px 220px 20px 220px;
+    padding: 0px 220px;
     align-content: center;
 }
-.play-instantly-content2{
+
+.play-instantly-content2 {
     text-align: left;
     transform: translate(0px, 250px)
-}  
+}
 
-.pimg2{
+.pimg2 {
     width: 100%;
 }
 
-.sub-img2{
+.sub-img2 {
     width: 50%;
     transform: translate(450px, -290px);
 }
 
 /* play instantly styles end here */
 
-.users-container{
+/* users styles start here */
+.users-container {
+    margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
-    padding: 20px 220px 20px 220px;
+    padding: 0px 220px 50px;
 }
-.users{
+
+.users {
     display: flex;
     gap: 10px;
     align-items: center;
     padding: 10px;
 }
-.users:hover{
+
+.users:hover {
     border: 2px solid var(--pink);
     border-radius: 50px;
     color: var(--pink);
+}
+
+/* users styles end here */
+
+/* footer styles start here */
+footer{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 220px 50px 220px;
+    background-color: var(--black);
+    color: var(--light-grey);
+    align-items: center;
+}
+.footer-logo{
+    align-items: center;
+    text-align: center;
+    color:var(--white);
+}
+.footer-links ul, .social-links ul, .website-links ul {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: var(--light-dark-grey);
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding-bottom: 30px;  
+}
+
+.footer-links ul li, .social-links ul li, .website-links ul li {
+    display: inline;
+    padding-right: 30px;
+    list-style: none;
+}
+
+.copyright{
+    text-align: center;
+}
+
+.footer-links ul > li, .social-links ul > li, .website-links ul > li{
+    list-style: none;
+}
+
+.footer-links ul li > a, .social-links ul li > a, .website-links ul li > a{
+    text-decoration: none;
+    color: var(--light-grey);
+}
+
+/* footer styles end here */
+.hide{
+    display: none;
+}
+/* responsive design */
+/* mobile devices */
+@media screen and (max-width:576px){
+    header{
+        flex-direction: column;
+        padding: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+    .logo{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    nav ul{
+        flex-direction: row;
+        align-items: center;
+    }
+    nav ul > .header-social-links{
+        flex-direction: column;
+    }
+}
+/* medium or tablets */
+@media screen and (min-width:576px) and (max-width:992px){
+
 }
