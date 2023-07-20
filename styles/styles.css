@@ -765,6 +765,11 @@ footer {
         padding-bottom: 30px;
     }
 
+    .play-content {
+        height: 86%;
+        gap: 1.2rem;
+    }
+
     .play-instantly-container,
     .play-instantly-container2 {
         flex-direction: column;
