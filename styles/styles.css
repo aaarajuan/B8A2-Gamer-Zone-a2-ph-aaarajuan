@@ -5,6 +5,14 @@
     font-family: 'Work Sans', sans-serif;
 }
 
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
 :root {
     --pink: #ff42a5;
     --light-grey: #cecbd4;
@@ -249,7 +257,7 @@ nav ul>li a {
 
 .videos img {
     width: 100%;
-    display: flex;
+    display: block;
     margin: auto;
 }
 
@@ -349,7 +357,8 @@ figcaption {
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
-    padding: 0px 220px 50px;
+    padding: 0px 220px;
+    transform: translateY(-100px);
 }
 
 .users {
@@ -381,6 +390,7 @@ footer {
     align-items: center;
     text-align: center;
     color: var(--white);
+    padding-bottom: 20px;
 }
 
 .footer-links ul,
@@ -427,8 +437,173 @@ footer {
 }
 
 /* responsive design */
-/* mobile devices max-width:576px as screen size */
-@media screen and (max-width:576px) {
+
+/* mobile devices min-width:425px and max-width:576px as screen size */
+@media screen and (min-width:425px) and (max-width:576px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    nav .follow-us {
+        color: #3C354F;
+        font-size: 1rem;
+        font-weight: 500;
+        width: 180px;
+        text-align: center;
+    }
+
+    .banner-container {
+        flex-direction: column;
+    }
+
+    .banner-content {
+        transform: translate(0px, 400px);
+    }
+
+    .banner-images img {
+        transform: translate(0px, -370px);
+        width: 400px;
+        margin-top: 0;
+    }
+
+    .banner-btn>.btn-blue,
+    .btn-pink {
+        font-size: 1rem;
+    }
+
+    .we-are-gamer-container {
+        flex-direction: column;
+    }
+
+    .we-are-gamer-container img {
+        width: 550px;
+    }
+
+    .wag-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .title {
+        align-items: center;
+        text-align: center;
+        width: 400px;
+    }
+
+    .online-games-funny-videos-container {
+        flex-direction: column;
+    }
+
+    .ogfv-content {
+        align-items: center;
+        text-align: center;
+    }
+
+    .video-cards {
+        flex-direction: column;
+    }
+
+    .videos {
+        padding-bottom: 30px;
+    }
+
+    .play-content{
+        height: 86%;
+    }
+
+    .play-instantly-container,
+    .play-instantly-container2 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .play-instantly-content {
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        width: 400px;
+    }
+
+    .pimg,
+    .pimg2 {
+        width: 400px;
+    }
+
+    .sub-img,
+    .sub-img2 {
+        transform: translate(-160px, -160px);
+    }
+
+    .play-instantly-content2 {
+        transform: translate(0px, -900px);
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        width: 400px;
+    }
+
+    .pimg2 {
+        transform: translate(0px, 300px);
+    }
+
+    .sub-img2 {
+        transform: translate(-160px, 160px);
+    }
+
+    .users {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    .footer-links ul,
+    .social-links ul,
+    .website-links ul {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 400px;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+
+    .footer-links ul li,
+    .social-links ul li,
+    .website-links ul li {
+        padding: 10px;
+    }
+
+    .copyright {
+        width: 400px;
+    }
+}
+
+/* tablet or medium size devices with min-width: 576px and max-width:992px as screen size */
+@media screen and (min-width:576px) and (max-width:992px) {
+    body{
+        background-color: var();
+    }
     header {
         flex-direction: column;
         align-items: center;
@@ -559,6 +734,7 @@ footer {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        flex-wrap: wrap;
     }
 
     .footer-links ul,
@@ -582,5 +758,3 @@ footer {
         width: 400px;
     }
 }
-
-@media screen and (min-width:576px) and (max-width:992px) {}
