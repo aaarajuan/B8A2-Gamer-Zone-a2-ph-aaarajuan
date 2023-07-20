@@ -427,7 +427,7 @@ footer {
 }
 
 /* responsive design */
-/* mobile devices */
+/* mobile devices max-width:576px as screen size */
 @media screen and (max-width:576px) {
     header {
         flex-direction: column;
