@@ -58,7 +58,7 @@ header {
     gap: 20px;
 }
 
-nav{
+nav {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -81,7 +81,7 @@ nav ul li {
     gap: 5px;
 }
 
-nav ul > li a {
+nav ul>li a {
     text-decoration: none;
     color: var(--light-dark-grey);
 }
@@ -178,7 +178,7 @@ nav ul > li a {
     text-transform: uppercase;
 }
 
-.banner-images img{
+.banner-images img {
     width: 100%;
 }
 
@@ -195,9 +195,11 @@ nav ul > li a {
     background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
     /* copied style from figma */
 }
-.we-are-gamer-container img{
+
+.we-are-gamer-container img {
     width: 100%;
 }
+
 .wag-content {
     text-align: right;
 }
@@ -239,6 +241,47 @@ nav ul > li a {
     justify-content: space-evenly;
     align-items: center;
     padding: 20px 220px 20px 220px;
+}
+
+.videos {
+    position: relative;
+}
+
+.videos img {
+    width: 100%;
+    display: flex;
+    margin: auto;
+}
+
+.play-content {
+    width: 100%;
+    height: 91%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    color: var(--pink);
+    border-radius: 10px;
+    border: 0;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+}
+
+.play-content i {
+    transform: translateY(25px);
+}
+
+.play-content p {
+    font-size: 1.2rem;
+    transform: translateY(25px);
+}
+
+.play-content:hover {
+    opacity: 1;
 }
 
 figcaption {
@@ -325,7 +368,7 @@ figcaption {
 /* users styles end here */
 
 /* footer styles start here */
-footer{
+footer {
     display: flex;
     flex-direction: column;
     padding: 50px 220px 50px 220px;
@@ -333,12 +376,16 @@ footer{
     color: var(--light-grey);
     align-items: center;
 }
-.footer-logo{
+
+.footer-logo {
     align-items: center;
     text-align: center;
-    color:var(--white);
+    color: var(--white);
 }
-.footer-links ul, .social-links ul, .website-links ul {
+
+.footer-links ul,
+.social-links ul,
+.website-links ul {
     display: flex;
     align-items: center;
     text-align: center;
@@ -346,146 +393,177 @@ footer{
     text-align: center;
     font-size: 1.1rem;
     font-weight: 500;
-    padding-bottom: 30px;  
+    padding-bottom: 30px;
 }
 
-.footer-links ul li, .social-links ul li, .website-links ul li {
+.footer-links ul li,
+.social-links ul li,
+.website-links ul li {
     display: flex;
     padding-right: 30px;
     list-style: none;
 }
 
-.copyright{
+.copyright {
     text-align: center;
 }
 
-.footer-links ul > li, .social-links ul > li, .website-links ul > li{
+.footer-links ul>li,
+.social-links ul>li,
+.website-links ul>li {
     list-style: none;
 }
 
-.footer-links ul li > a, .social-links ul li > a, .website-links ul li > a{
+.footer-links ul li>a,
+.social-links ul li>a,
+.website-links ul li>a {
     text-decoration: none;
     color: var(--light-grey);
 }
 
 /* footer styles end here */
-.hide{
+.hide {
     display: none;
 }
+
 /* responsive design */
 /* mobile devices */
-@media screen and (max-width:576px){
-    body{
-        padding: 0;
-        margin: 0;
-    }
-    header{
+@media screen and (max-width:576px) {
+    header {
         flex-direction: column;
         align-items: center;
         justify-content: center;
         gap: 20px;
     }
-    nav{
+
+    nav {
         flex-direction: column;
         gap: 10px;
     }
-    nav ul{
+
+    nav ul {
         flex-direction: column;
         align-items: center;
         justify-content: center;
         text-align: center;
         gap: 10px;
     }
-    nav .follow-us{
+
+    nav .follow-us {
         color: #3C354F;
         font-size: 1rem;
         font-weight: 500;
         width: 180px;
         text-align: center;
     }
-    .banner-container{
+
+    .banner-container {
         flex-direction: column;
     }
 
-    .banner-content{
+    .banner-content {
         transform: translate(0px, 400px);
     }
 
-    .banner-images img{
+    .banner-images img {
         transform: translate(0px, -370px);
         width: 400px;
         margin-top: 0;
     }
-    .banner-btn > .btn-blue, .btn-pink{
+
+    .banner-btn>.btn-blue,
+    .btn-pink {
         font-size: 1rem;
     }
-    .we-are-gamer-container{
+
+    .we-are-gamer-container {
         flex-direction: column;
     }
-    .we-are-gamer-container  img{
+
+    .we-are-gamer-container img {
         width: 550px;
     }
-    .wag-content{
+
+    .wag-content {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         text-align: center;
     }
-    .title{
+
+    .title {
         align-items: center;
         text-align: center;
         width: 400px;
     }
-    .online-games-funny-videos-container{
+
+    .online-games-funny-videos-container {
         flex-direction: column;
     }
-    .ogfv-content{
+
+    .ogfv-content {
         align-items: center;
         text-align: center;
     }
-    .video-cards{
+
+    .video-cards {
         flex-direction: column;
     }
-    .videos{
+
+    .videos {
         padding-bottom: 30px;
     }
-    .play-instantly-container, .play-instantly-container2{
+
+    .play-instantly-container,
+    .play-instantly-container2 {
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
+
     .play-instantly-content {
         align-items: center;
         text-align: center;
         justify-content: center;
         width: 400px;
     }
-    .pimg, .pimg2{
+
+    .pimg,
+    .pimg2 {
         width: 400px;
     }
-    .sub-img, .sub-img2{
+
+    .sub-img,
+    .sub-img2 {
         transform: translate(-160px, -160px);
     }
-    .play-instantly-content2{
+
+    .play-instantly-content2 {
         transform: translate(0px, -900px);
         align-items: center;
         text-align: center;
         justify-content: center;
         width: 400px;
     }
-    .pimg2{
+
+    .pimg2 {
         transform: translate(0px, 300px);
     }
-    .sub-img2{
+
+    .sub-img2 {
         transform: translate(-160px, 160px);
     }
-    .users{
+
+    .users {
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
-    .footer-links ul, .social-links ul, .website-links ul {
+
+    .footer-links ul,
+    .social-links ul,
+    .website-links ul {
         justify-content: center;
         align-items: center;
         text-align: center;
@@ -493,13 +571,16 @@ footer{
         flex-wrap: wrap;
         padding: 20px;
     }
-    .footer-links ul li, .social-links ul li, .website-links ul li{
+
+    .footer-links ul li,
+    .social-links ul li,
+    .website-links ul li {
         padding: 10px;
     }
-    .copyright{
+
+    .copyright {
         width: 400px;
     }
 }
-@media screen and (min-width:576px) and (max-width:992px) {
-    
-}
+
+@media screen and (min-width:576px) and (max-width:992px) {}
